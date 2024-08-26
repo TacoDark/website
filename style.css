@@ -1,0 +1,108 @@
+body {
+  background-color: black;
+  color: limegreen;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  text-shadow: 0 0 5px limegreen;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* Center the navigation */
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: limegreen;
+  text-decoration: none;
+  padding: 10px 20px; /* Add padding to the buttons */
+  border: 2px solid limegreen;
+  border-radius: 5px; /* Round the corners */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+nav a:hover {
+  background-color: limegreen;
+  color: black;
+}
+
+section {
+  padding: 20px;
+  text-align: center; /* Center content */
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Matrix Glitch Effect */
+.glitch-text {
+  position: relative;
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5px, 0);
+  }
+  20% {
+    transform: translate(5px, 0);
+  }
+  30% {
+    transform: translate(0, -5px);
+  }
+  40% {
+    transform: translate(0, 5px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Noise Background */
+.noise-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://www.noisetexture.com/assets/noise/white-noise.png"); /* Example noise image */
+  background-size: 100%;
+  opacity: 0.1; /* Adjust transparency */
+  pointer-events: none; /* Prevent clicks from interacting with the noise */
+}
+
+/* Optional:  Add a "falling code" effect */
+.falling-code {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
